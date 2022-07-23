@@ -1,8 +1,7 @@
-name: "my-website"
+name: "Reto SCV"
+output_dir: "public"
 navbar:
   title: "My Website"
   left:
-    - text: "FireBase"
+    - text: "Bike Head 1000"
       href: index.html
-    - text: "About"
-      href: about.html
