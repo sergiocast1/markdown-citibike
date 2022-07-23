@@ -1,5 +1,24 @@
 ---
-title: "MarkDown Firebase"
+title: "Bike Data Extract"
 ---
 
-[App Markdown Firebase]([https://sergiocast1.github.io/markdown-git/](https://citybike-sergio-castrilllo.firebaseapp.com/index.html])
+```{r setup, include=FALSE}
+library(dplyr)
+library(gt)
+library(gtExtras)
+library(kableExtra)
+
+bike <-read.csv("https://raw.githubusercontent.com/sergiocast1/reto-sergio-castrillo/master/citibike-tripdata.csv")
+```
+
+```{r data, include=FALSE}
+dt <- bike[1:1000,]
+
+```
+
+
+```{r test, include=TRUE}
+dt %>%
+  kbl() %>%
+  kable_material_dark()
+```
